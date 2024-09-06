@@ -17,19 +17,30 @@
 <body>
   <header>
     <div class="header-container">
-      <button id="menu-bt" type="button">
-        <span>
-          <div class="bar1" id="bar1"></div>
-          <div class="bar2" id="bar2"></div>
-          <div class="bar3" id="bar3"></div>
-        </span>
-      </button>
+      <input id="checkbox" type="checkbox">
+      <label class="toggle" for="checkbox">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </label>
       <div class="media">
-        <img src="./src/img/github.svg" alt="Perfil no Github">
-        <img src="./src/img/linkedin.svg" alt="Perfil no Linkedin">
+        <a href=""><img src="./src/img/github.svg" alt="Perfil no Github"></a>
+        <a href=""><img src="./src/img/linkedin.svg" alt="Perfil no Linkedin"></a>
       </div>
     </div>
+
+    <div class="menu" id="menu">
+      <ul class="menu-list">
+        <li><a class="menu-link" href="">Início</a></li>
+        <li><a class="menu-link" href="">Sobre Mim</a></li>
+        <li><a class="menu-link" href="">Experiência</a></li>
+        <li><a class="menu-link" href="">Projetos</a></li>
+        <li><a class="menu-link" href="">Contato</a></li>
+      </ul>
+    </div>
   </header>
+
+  <script src="./src/js/main.js" type="module"></script>
 </body>
 
 </html>
