@@ -1,0 +1,120 @@
+.about-me {
+  height: 900px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-text-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-text-container::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--secondary-text);
+  border-radius: 10px;
+}
+
+.about-text {
+  text-align: center;
+  font-family: var(--secondary-font);
+  color: var(--primary-text);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 40px;
+}
+
+.about-text span {
+  color: var(--secondary-text);
+}
+
+.formation-container {
+  width: 90%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formation {
+  margin: 0;
+  width: 21.875rem;
+  height: 9.375rem;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px 20px;
+}
+
+.degree {
+  color: var(--alternative-text);
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.formation h4 {
+  color: var(--primary-text);
+  font-family: var(--main-font);
+  font-size: 1.1875rem;
+  font-weight: 700;
+}
+
+.institution {
+  color: var(--primary-text);
+  font-family: var(--main-font);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me {
+    height: 700px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-text {
+    text-align: start;
+  }
+  .about-text-container {
+    width: 100%;
+    align-items: start;
+  }
+  .formation-container {
+    width: 100%;
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    width: 80%;
+  }
+  .about-text {
+    font-size: 1.625rem;
+  }
+  .degree {
+    font-size: 0.875rem;
+  }
+  .formation h4 {
+    font-size: 1.3125rem;
+  }
+  .formation .institution {
+    font-size: 0.9375rem;
+  }
+}

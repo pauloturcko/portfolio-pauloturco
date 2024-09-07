@@ -1,0 +1,113 @@
+.experience {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-template-columns: 1fr;
+  background-color: var(--secondary-bg);
+  height: 500px;
+  width: 100%;
+}
+
+.experience-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-title {
+  display: none;
+}
+
+.experience-content {
+  color: #fff;
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 50px;
+}
+
+.experience-intro::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--secondary-text);
+  border-radius: 10px;
+}
+
+.experience-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.experience-intro p {
+  color: var(--primary-text);
+  font-family: var(--main-font);
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+
+.experience-intro h2 {
+  color: var(--alternative-text);
+  font-family: var(--secondary-font);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.experience-decription p {
+  color: var(--primary-text);
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .experience {
+    align-items: center;
+  }
+  .experience-content {
+    margin: 0;
+  }
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .experience-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--header-bg);
+    font-family: var(--secondary-font);
+    opacity: 60%;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .experience-container {
+    width: 80%;
+  }
+  .experience-title {
+    font-size: 3.5rem;
+    line-height: 80px;
+  }
+  .experience-intro p {
+    font-size: 1.3125;
+  }
+  .experience-intro h2 {
+    font-size: 0.875rem;
+  }
+  .experience-decription p {
+    font-size: 1.625rem;
+  }
+}

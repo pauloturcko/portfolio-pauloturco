@@ -93,6 +93,7 @@
 }
 @media screen and (min-width: 1440px) {
   .inicio {
+    height: 500px;
     width: 80%;
   }
   .text-content h2 {
