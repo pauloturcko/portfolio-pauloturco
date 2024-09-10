@@ -1,0 +1,250 @@
+.projects {
+  padding: 50px 0 100px 0;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  background-color: var(--secondary-bg);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.projects-title {
+  display: none;
+}
+
+.projects-container {
+  gap: 1.875rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-name {
+  border-radius: 10px;
+  padding: 1.25rem 1.875rem;
+  width: 100%;
+  background-color: var(--primary-bg);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.projects-list li {
+  display: inline-block;
+  position: relative;
+  font-family: var(--main-font);
+  color: var(--primary-text);
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.project-content {
+  border-radius: 10px;
+  width: 100%;
+  height: 40.625rem;
+  background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.875rem;
+}
+
+.project-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.project-text {
+  font-family: var(--secondary-font);
+  color: var(--primary-text);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.project-acess {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.view-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text);
+  font-family: var(--secondary-font);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--secondary-text);
+  width: 15.625rem;
+  height: 2.1875rem;
+  border-radius: 7px;
+}
+
+.view-repo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text);
+  font-family: var(--secondary-font);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 15.625rem;
+  height: 2.1875rem;
+  border: 1px solid var(--secondary-text);
+  border-radius: 7px;
+}
+
+.project-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: start;
+  gap: 4.5rem;
+}
+
+.project-type {
+  color: var(--alternative-text);
+  font-family: var(--main-font);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.project-technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-technologies p {
+  color: var(--alternative-text);
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tech-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-title {
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    text-align: end;
+    z-index: 0;
+    color: var(--header-bg);
+    font-family: var(--secondary-font);
+    opacity: 60%;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  .projects-title h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.25rem;
+  }
+  .projects-title h1::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--secondary-text);
+    border-radius: 10px;
+  }
+  .projects {
+    gap: 3.75rem;
+  }
+  .projects-container {
+    flex-direction: row;
+  }
+  .projects-name {
+    width: 18.75rem;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .projects-list {
+    height: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .projects-list li {
+    cursor: pointer;
+  }
+  .project-content {
+    height: 500px;
+  }
+  .project-description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-text {
+    width: 25rem;
+  }
+  .project-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .project-technologies {
+    gap: 1.875rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects-title {
+    width: 80%;
+  }
+  .projects-container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .projects-name {
+    width: 18.75rem;
+  }
+  .project-content {
+    width: 56.25rem;
+  }
+  .project-text {
+    font-size: 1.625rem;
+    width: 31.25rem;
+  }
+  .project-acess a {
+    font-size: 1.125rem;
+  }
+}

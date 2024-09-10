@@ -5,6 +5,6 @@
   --primary-text: #ffffff;
   --secondary-text: #96c300;
   --alternative-text: #a1a1a1;
-  --main-font: "Nunito";
-  --secondary-font: "Lato";
+  --main-font: "Nunito", Arial, sans-serif;
+  --secondary-font: "Lato", Arial, sans-serif;
 }
