@@ -83,6 +83,7 @@ header {
 
 #menu {
   visibility: hidden;
+  z-index: 1;
   background-color: var(--header-bg);
   position: fixed;
   top: 70px;

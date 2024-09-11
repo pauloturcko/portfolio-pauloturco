@@ -98,6 +98,7 @@
   width: 15.625rem;
   height: 2.1875rem;
   border-radius: 7px;
+  transition: 0.3s ease-in-out;
 }
 
 .view-repo {
@@ -117,6 +118,7 @@
   height: 2.1875rem;
   border: 1px solid var(--secondary-text);
   border-radius: 7px;
+  transition: 0.3s ease-in-out;
 }
 
 .project-info {
@@ -203,9 +205,6 @@
     gap: 0;
     justify-content: space-between;
   }
-  .projects-list li {
-    cursor: pointer;
-  }
   .project-content {
     height: 500px;
   }
@@ -223,6 +222,35 @@
   }
   .project-technologies {
     gap: 1.875rem;
+  }
+  .view-project:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.075);
+  }
+  .view-repo:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.075);
+  }
+  .projects-list li {
+    width: fit-content;
+    cursor: pointer;
+  }
+  .projects-list li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--secondary-text);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+  .projects-list li:hover::after {
+    width: 100%;
+  }
+  .projects-list li.active::after {
+    width: 100%;
+    opacity: 100%;
   }
 }
 
