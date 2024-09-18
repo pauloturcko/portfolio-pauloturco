@@ -250,7 +250,6 @@
   }
   .projects-list li.active::after {
     width: 100%;
-    opacity: 100%;
   }
 }
 
@@ -271,6 +270,7 @@
   .project-text {
     font-size: 1.625rem;
     width: 31.25rem;
+    line-height: 2.1rem;
   }
   .project-acess a {
     font-size: 1.125rem;
