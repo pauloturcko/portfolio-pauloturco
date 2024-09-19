@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PTBR">
+<html lang="EN">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   <header>
     <nav aria-label="Menu de Navegação" class="header-container">
       <input id="checkbox" type="checkbox">
-      <label class="toggle" for="checkbox">
+      <label class="toggle" for="checkbox" tabindex="0">
         <div class="bars" id="bar1"></div>
         <div class="bars" id="bar2"></div>
         <div class="bars" id="bar3"></div>
@@ -31,28 +31,28 @@
 
     <div class="menu" id="menu">
       <ul class="menu-list">
-        <li><a class="menu-link" href="">Início</a></li>
-        <li><a class="menu-link" href="">Sobre Mim</a></li>
-        <li><a class="menu-link" href="">Experiência</a></li>
-        <li><a class="menu-link" href="">Projetos</a></li>
-        <li><a class="menu-link" href="">Contato</a></li>
+        <li><a class="menu-link" href="#inicio">Início</a></li>
+        <li><a class="menu-link" href="#about-me">Sobre Mim</a></li>
+        <li><a class="menu-link" href="#experience">Experiência</a></li>
+        <li><a class="menu-link" href="#projects">Projetos</a></li>
+        <li><a class="menu-link" href="#contact">Contato</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <article class="inicio" aria-label="Início">
+    <article id="inicio" class="inicio" aria-label="Início">
       <div class="text-content">
         <h2>Olá! Eu sou Paulo Turco</h2>
         <h3>Desenvolvedor Front-End</h3>
-        <a href="./src/docs/Curriculo - Paulo Turco PTBR.pdf" download="Currículo - Paulo Turco PTBR.pdf">Download C.V</a>
+        <a href="./src/docs/Curriculo - Paulo Turco PTBR.pdf" download="Currículo - Paulo Turco PTBR.pdf" aria-label="Baixar Currículo em PDF">Download C.V</a>
       </div>
       <div class="profile-photo">
         <img src="./src/img/profile.svg" alt="Foto de Paulo Turco">
       </div>
     </article>
 
-    <article class="about-me" aria-label="Sobre Mim">
+    <article id="about-me" class="about-me" aria-label="Sobre Mim">
       <div class="about-text-container">
         <p class="about-text">Sou um desenvolvedor <span>Front-End</span> apaixonado por tecnologia e inovação, gosto de pesquisar, ver e entender como tudo isso funciona.
           Estou nesta área a 2 anos e atualmente minhas ferramentas principais de trabalho são <span>React</span> e <span>JavaScript</span>.</p>
@@ -79,7 +79,7 @@
       </div>
     </article>
 
-    <article class="experience" aria-label="Experiência">
+    <article id="experience" class="experience" aria-label="Experiência">
       <div class="experience-container">
         <div class="experience-title">
           <h1>por<br>onde<br>andei</h1>
@@ -96,21 +96,20 @@
       </div>
     </article>
 
-    <article class="projects" aria-label="Projetos">
+    <article id="projects" class="projects" aria-label="Projetos">
       <div class="projects-title">
         <h1>meus<br>projetos</h1>
       </div>
       <div class="projects-container">
         <div class="projects-name">
           <ul id="projects-list" class="projects-list">
-            <li class="list-item">API De Voz</li>
-            <li class="list-item">Fokus</li>
-            <li class="list-item">Portfólio</li>
-            <li class="list-item">Vitality Gym</li>
-            <li class="list-item">Dogs</li>
-            <li class="list-item">Animais Fantásticos</li>
-            <li class="list-item">Maze Bank</li>
-
+            <li class="list-item" tabindex="0">API De Voz</li>
+            <li class="list-item" tabindex="0">Fokus</li>
+            <li class="list-item" tabindex="0">Portfólio</li>
+            <li class="list-item" tabindex="0">Vitality Gym</li>
+            <li class="list-item" tabindex="0">Dogs</li>
+            <li class="list-item" tabindex="0">Animais Fantásticos</li>
+            <li class="list-item" tabindex="0">Maze Bank</li>
           </ul>
         </div>
         <div class="project-content">
@@ -136,7 +135,7 @@
       </div>
     </article>
 
-    <article class="contact" aria-label="Contato">
+    <article id="contact" class="contact" aria-label="Contato">
       <div class="contact-container">
         <div class="media-container">
           <div class="contact-title">
@@ -165,12 +164,16 @@
               <label for="mensagem">Mensagem</label>
               <textarea name="mensagem" id="mensagem" rows="12" required></textarea>
             </div>
-            <button type="submit" class="sendBt">Enviar Mensagem</button>
+            <button type="submit" class="sendBt" aria-label="Enviar Mensagem Por Email">Enviar Mensagem</button>
           </form>
         </div>
       </div>
     </article>
   </main>
+
+  <footer>
+    <p>Copyright &copy. 2024 Paulo Turco. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="./src/js/main.js" type="module"></script>
 </body>

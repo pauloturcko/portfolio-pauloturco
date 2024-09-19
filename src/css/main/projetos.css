@@ -159,6 +159,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .projects {
+    padding: 0;
+  }
   .projects-title {
     display: flex;
     width: 90%;
@@ -178,6 +181,9 @@
     flex-direction: column;
     align-items: end;
     gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    width: auto;
   }
   .projects-title h1::before {
     content: "";
