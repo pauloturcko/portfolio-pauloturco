@@ -13,6 +13,3 @@ linksInternos.forEach((link) => {
 
 
 initializeProjectList();
-
-// Animação
-new SimpleAnime();
