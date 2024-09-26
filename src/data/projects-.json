@@ -1,16 +1,16 @@
 [
   {
-    "name": "ApiVoiceRecognitionGame",
-    "description": "Este projeto integra reconhecimento de voz em um jogo, ao iniciar, o computador gera um número aleatório entre 1 e 1000, o objetivo dos jogadores é acertar este número secreto. O computador irá reconhecer o que o jogador falou, exibir na tela e dizer se está correto ou não.",
+    "name": "Bikcraft",
+    "description": "Este projeto trata-se de um site de vendas de bicicletas elétricas e representa uma evolução nos meus conhecimentos em HTML & CSS, durante o processo aprendi como otimizar o SEO e melhorar a acessibilidade do site utilizando HTML, além de algumas técnicas avançadas de estilização com CSS.",
     "projectLink": "https://pauloturcko.github.io/ApiVoiceRecognitionGame/",
     "repoLink": "https://github.com/pauloturcko/ApiVoiceRecognitionGame",
     "technologies": ["HTML", "CSS", "JavaScript"]
   },
   {
-    "name": "Vitality Gym",
-    "description": "Uma SPA (Single Page Aplication) para uma academia feito com React. O projeto foi criado utilizando a biblioteca React Router DOM, ela evita que o site seja recarregado toda vez que o usuário entrar em uma nova página do site, o que chamamos de SPA, otimizando assim a experiência do usuário",
+    "name": "Fokus",
+    "description": "Fokus foi meu primeiro projeto relativamente grande usando JavaScript. Nele, aprendi na prática o que é e como manipular o DOM, o projeto consiste em um timer pomodoro, onde integra diferentes telas e sons a partir das ações do usuário.",
     "projectLink": "https://vitalitygym.com",
-    "repoLink": "https://github.com/vitalitygym",
-    "technologies": ["React", "Tailwind CSS", "JavaScript"]
+    "repoLink": "https://github.com/pauloturcko/Focus",
+    "technologies": ["../img/html-icon.svg", "../img/css-icon.svg", "../img/js-icon.svg"]
   }
 ]

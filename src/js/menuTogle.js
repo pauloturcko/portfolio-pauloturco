@@ -8,4 +8,15 @@ function toggleMenu() {
   }
 }
 
+// function animationMenu() {
+//   if(contentMenu.style.visibility === "hidden") {
+//     contentMenu.classList.add('show')
+//     setTimeout(() => {
+//       contentMenu.style.visibility = 'hidden';
+//     }, 400);
+//   } else {
+//     contentMenu.classList.remove('show')
+//   }
+// };
+
 export { toggleMenu };
